@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #FFF;
+}
+
+header nav li {
+    display: inline;
+    margin: left 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.sobre-a-loja {
+    margin-top: 16px;
+    display: flex;
+}
+
+.sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    margin-top: 16px;
+}
+
+.lista {
+    margin-top: 16px ;
+}
+
+.lista ul{
+    display: grid;
+    grid-template-columns: repeat( 4 , 24.5%);
+    column-gap: 1%;
+}
+
+.lista-placas img {
+    max-width: 100%;
+}
+
+.lista-placas li {
+    list-style: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 2px 0;
+    margin-top: 2px;
+    border: none;
+    background-color: #1a0fac;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+hr{
+    border-color: #36b0e0;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #36b0e0;
+}
+
+@media  screen and ( max-width: 640px) {
+
+    .container {
+        max-width: 90%;
+        display: block;
+    } 
+    
+    header > .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 16px;
+    }
+
+    .sobre-a-loja {
+        display: flex;
+    }
+    
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    
+    .lista ul {
+        display: block;
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and ( min-width: 641px) and ( max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-a-loja .container-flex {
+        display: block;
+    }
+    
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }   
+
+    .lista .container-flex {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
